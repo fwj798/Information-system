@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python run.py)",
+      "Bash(pip list *)",
+      "Bash(pip3 list *)",
+      "Bash(python -m pip list)",
+      "Bash(pip install *)",
+      "Bash(curl -s http://127.0.0.1:5001/auth/login)",
+      "Bash(python -m python.model.init_db)",
+      "Bash(python -c \"from python import create_app; app = create_app\\(\\); print\\('OK - App created'\\); [print\\(r.rule\\) for r in app.url_map.iter_rules\\(\\) if 'profile' in r.rule]\")",
+      "Bash(python *)",
+      "Bash(curl -s http://127.0.0.1:5001/dashboard/summary)",
+      "Bash(curl -s -c /tmp/cookies.txt -b /tmp/cookies.txt -X POST http://127.0.0.1:5001/auth/login -d \"username=admin&password=admin123&csrf_token=dummy\")",
+      "Bash(curl -s -b /tmp/cookies.txt http://127.0.0.1:5001/dashboard/summary)",
+      "Bash(taskkill //f //im python.exe)",
+      "Bash(ls -la *.csv)",
+      "Bash(ls -la ../*.csv)"
+    ]
+  }
+}
